@@ -1,0 +1,711 @@
+{
+  "titel": "Der Brief vom Amt – Brief 1: Die Mahnung (3D)",
+  "stil": "3d",
+  "folge": 1,
+  "marke": "Der Brief vom Amt · #1",
+  "untertitelY": 1250,
+  "quellen": [
+    "Verbraucherzentrale: Mahnbescheid bekommen – was tun? https://www.verbraucherzentrale.de/infothek/mahnbescheid-bekommen",
+    "Verbraucherzentrale Niedersachsen: Unterschied zwischen Mahnung und Mahnbescheid",
+    "Deutsche Bundesbank: Basiszinssatz ab 1. Juli 2026 = 1,52 % → Verzugszinsen Verbraucher 6,52 % (§ 288 BGB)",
+    "Justiz NRW: Das Mahnverfahren (Widerspruch 2 Wochen ab Zustellung)"
+  ],
+  "briefe": {
+    "mahnung": {
+      "pos": [
+        0.02,
+        0,
+        -0.4
+      ],
+      "rotY": 0.06,
+      "absender": "Musterstrom GmbH",
+      "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+      "logoText": "M",
+      "logoFarbe": "#2f6f5e",
+      "datum": "03.11.2026",
+      "betreff": "Mahnung – Rechnung Nr. 4711",
+      "zeilen": [
+        {
+          "text": "Unsere Rechnung vom 01.10. ist noch offen."
+        },
+        {
+          "text": "Sie befinden sich in Zahlungsverzug."
+        },
+        {
+          "text": "Wir berechnen Verzugszinsen (§ 288 BGB)."
+        },
+        {
+          "text": "Offener Betrag",
+          "betrag": "84,00 €",
+          "linie": true
+        },
+        {
+          "text": "Mahngebühr",
+          "betrag": "5,00 €"
+        },
+        {
+          "text": "Gesamt",
+          "betrag": "89,00 €",
+          "fett": true,
+          "gross": true,
+          "linie": true
+        }
+      ],
+      "fueller": 3,
+      "stempel": {
+        "text": "MAHNUNG",
+        "x": 700,
+        "y": 330,
+        "rot": -10,
+        "groesse": 92
+      }
+    },
+    "mahnbescheid": {
+      "pos": [
+        0.1,
+        0,
+        -0.36
+      ],
+      "rotY": -0.1,
+      "lage": 6,
+      "absender": "Amtsgericht Musterstadt",
+      "absenderZeile": "Mahnabteilung · Musterplatz 1",
+      "logoText": "§",
+      "logoFarbe": "#3b4a8a",
+      "datum": "02.12.2026",
+      "betreff": "Mahnbescheid",
+      "zeilen": [
+        {
+          "text": "Antragsteller: Musterstrom GmbH"
+        },
+        {
+          "text": "Das Gericht hat nicht geprüft, ob dem"
+        },
+        {
+          "text": "Antragsteller der Anspruch zusteht."
+        },
+        {
+          "text": "Forderung laut Antragsteller",
+          "betrag": "89,00 €",
+          "linie": true
+        },
+        {
+          "text": "zzgl. Zinsen und Verfahrenskosten"
+        },
+        {
+          "text": "Widerspruch: innerhalb von 2 Wochen",
+          "fett": true,
+          "farbe": "rot",
+          "linie": true
+        }
+      ],
+      "fueller": 2
+    }
+  },
+  "szenen": [
+    {
+      "text": "Mahnung über *89 Euro*. Was passiert, wenn du sie einfach liegen lässt?",
+      "kamera": {
+        "pos": [
+          0.02,
+          1.42,
+          0.22
+        ],
+        "ziel": [
+          0.02,
+          0.6,
+          -0.72
+        ],
+        "bis": {
+          "pos": [
+            0.02,
+            1.3,
+            0.08
+          ],
+          "ziel": [
+            0.02,
+            0.6,
+            -0.72
+          ]
+        },
+        "ease": "out"
+      },
+      "ereignisse": [
+        {
+          "typ": "titel",
+          "text": "Was, wenn du diese\n*Mahnung* ignorierst?",
+          "bei": 0,
+          "weg": "ende",
+          "y": 330
+        },
+        {
+          "typ": "hud",
+          "label": "Offen",
+          "wert": "89,00 €",
+          "unter": "Status: Mahnung",
+          "bei": 0
+        }
+      ]
+    },
+    {
+      "text": "Den teuersten Fehler zeig ich dir am Ende. Erst: Was steht da wirklich?",
+      "kamera": {
+        "pos": [
+          -0.12,
+          1.12,
+          -0.12
+        ],
+        "ziel": [
+          0.0,
+          0.75,
+          -0.45
+        ],
+        "bis": {
+          "pos": [
+            0.06,
+            1.06,
+            -0.16
+          ],
+          "ziel": [
+            0.03,
+            0.75,
+            -0.45
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "hud",
+          "label": "Auflösung",
+          "wert": "am Ende",
+          "unter": "der teuerste Fehler",
+          "bei": 0
+        }
+      ]
+    },
+    {
+      "text": "„In Verzug“ heißt: Du bist *zu spät dran*.",
+      "kamera": {
+        "pos": [
+          0.04,
+          1.0,
+          -0.22
+        ],
+        "ziel": [
+          0.03,
+          0.75,
+          -0.45
+        ],
+        "bis": {
+          "pos": [
+            0.07,
+            0.98,
+            -0.24
+          ],
+          "ziel": [
+            0.05,
+            0.75,
+            -0.44
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "mark",
+          "brief": "mahnung",
+          "zeile": 1,
+          "bei": "Verzug"
+        },
+        {
+          "typ": "hud",
+          "label": "Status",
+          "wert": "Verzug",
+          "unter": "zu spät gezahlt",
+          "bei": "heißt",
+          "farbe": "#ffb84d"
+        }
+      ]
+    },
+    {
+      "text": "Ab jetzt kosten *Zinsen*: *6,52 Prozent* im Jahr.",
+      "ereignisse": [
+        {
+          "typ": "mark",
+          "brief": "mahnung",
+          "zeile": 2,
+          "bei": "Ab"
+        },
+        {
+          "typ": "hud",
+          "label": "Verzugszinsen",
+          "wert": "6,52 %",
+          "unter": "pro Jahr · Basiszins + 5",
+          "bei": "6,52"
+        }
+      ],
+      "kamera": {
+        "pos": [
+          0.07,
+          0.98,
+          -0.24
+        ],
+        "ziel": [
+          0.05,
+          0.75,
+          -0.44
+        ],
+        "bis": {
+          "pos": [
+            0.1,
+            0.97,
+            -0.22
+          ],
+          "ziel": [
+            0.07,
+            0.75,
+            -0.41
+          ]
+        }
+      }
+    },
+    {
+      "text": "Und *5 Euro* Mahngebühr? Das ist oft *zu viel*.",
+      "kamera": {
+        "pos": [
+          0.14,
+          1.0,
+          -0.12
+        ],
+        "ziel": [
+          0.07,
+          0.75,
+          -0.34
+        ],
+        "bis": {
+          "pos": [
+            0.16,
+            0.98,
+            -0.1
+          ],
+          "ziel": [
+            0.09,
+            0.75,
+            -0.33
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "mark",
+          "brief": "mahnung",
+          "zeile": 4,
+          "bei": "5"
+        },
+        {
+          "typ": "hud",
+          "label": "Mahngebühr",
+          "wert": "5,00 €",
+          "unter": "oft zu hoch",
+          "bei": "5",
+          "farbe": "#ff6a5c"
+        }
+      ]
+    },
+    {
+      "text": "Was du jetzt tust: *Prüfen*, ob die Rechnung stimmt. Stimmt alles: *sofort zahlen*, das stoppt die Zinsen. Ist sie falsch: *schriftlich widersprechen*.",
+      "kamera": {
+        "pos": [
+          0.05,
+          1.3,
+          0.55
+        ],
+        "ziel": [
+          0.0,
+          0.8,
+          -0.5
+        ],
+        "bis": {
+          "pos": [
+            -0.35,
+            1.25,
+            0.6
+          ],
+          "ziel": [
+            0.0,
+            0.8,
+            -0.5
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "liste",
+          "titel": "WAS DU JETZT TUST",
+          "y": 860,
+          "bei": "Was",
+          "weg": "ende",
+          "punkte": [
+            {
+              "text": "Rechnung *prüfen*",
+              "bei": "Prüfen"
+            },
+            {
+              "text": "Stimmt sie? *Sofort zahlen*",
+              "bei": "Stimmt"
+            },
+            {
+              "text": "Falsch? *Schriftlich widersprechen*",
+              "bei": "Ist"
+            }
+          ]
+        },
+        {
+          "typ": "hud",
+          "aus": true,
+          "bei": 0
+        }
+      ]
+    },
+    {
+      "text": "Aber du lässt sie liegen. Tag für Tag.",
+      "kamera": {
+        "pos": [
+          1.5,
+          1.6,
+          1.3
+        ],
+        "ziel": [
+          -0.3,
+          0.9,
+          -0.9
+        ],
+        "bis": {
+          "pos": [
+            1.3,
+            1.55,
+            1.1
+          ],
+          "ziel": [
+            -0.3,
+            0.9,
+            -0.9
+          ]
+        },
+        "ease": "linear"
+      },
+      "ereignisse": [
+        {
+          "typ": "hud",
+          "label": "Seit der Mahnung",
+          "wert": "Tag 1",
+          "unter": "nichts passiert … oder?",
+          "bei": 0
+        },
+        {
+          "typ": "tage",
+          "von": 1,
+          "bis": 30,
+          "bei": 0,
+          "dauer": 3.4
+        },
+        {
+          "typ": "stapel",
+          "anzahl": 8,
+          "bei": 0.2,
+          "dauer": 3.0
+        }
+      ]
+    },
+    {
+      "text": "Bis ein *gelber Brief* kommt.",
+      "kamera": {
+        "pos": [
+          0.35,
+          1.4,
+          0.3
+        ],
+        "ziel": [
+          0.08,
+          0.76,
+          -0.36
+        ],
+        "bis": {
+          "pos": [
+            0.28,
+            1.3,
+            0.2
+          ],
+          "ziel": [
+            0.08,
+            0.76,
+            -0.36
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "zeige",
+          "objekt": "umschlag",
+          "bei": "gelber",
+          "pos": [
+            0.12,
+            0,
+            -0.34
+          ],
+          "rotY": 0.25,
+          "lage": 2
+        },
+        {
+          "typ": "wackeln",
+          "bei": 1.1,
+          "staerke": 0.006
+        },
+        {
+          "typ": "hud",
+          "label": "Status",
+          "wert": "Gericht",
+          "unter": "förmliche Zustellung",
+          "bei": "gelber",
+          "farbe": "#ffd23f"
+        }
+      ]
+    },
+    {
+      "text": "Ein *Mahnbescheid*. Das Gericht prüft *nicht*, ob die Forderung stimmt.",
+      "kamera": {
+        "pos": [
+          0.12,
+          1.32,
+          0.02
+        ],
+        "ziel": [
+          0.1,
+          0.7,
+          -0.42
+        ],
+        "bis": {
+          "pos": [
+            0.12,
+            1.2,
+            -0.06
+          ],
+          "ziel": [
+            0.1,
+            0.7,
+            -0.42
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "zeige",
+          "objekt": "mahnbescheid",
+          "bei": 0
+        },
+        {
+          "typ": "mark",
+          "brief": "mahnbescheid",
+          "zeile": 1,
+          "bei": "prüft"
+        },
+        {
+          "typ": "mark",
+          "brief": "mahnbescheid",
+          "zeile": 2,
+          "bei": "ob"
+        },
+        {
+          "typ": "hud",
+          "label": "Geprüft?",
+          "wert": "Nein",
+          "unter": "das Gericht prüft nicht",
+          "bei": "nicht",
+          "farbe": "#ff6a5c"
+        }
+      ]
+    },
+    {
+      "text": "Du hast *2 Wochen* für den Widerspruch.",
+      "kamera": {
+        "pos": [
+          0.14,
+          1.12,
+          0.02
+        ],
+        "ziel": [
+          0.11,
+          0.7,
+          -0.32
+        ],
+        "bis": {
+          "pos": [
+            0.14,
+            1.06,
+            -0.02
+          ],
+          "ziel": [
+            0.11,
+            0.7,
+            -0.32
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "mark",
+          "brief": "mahnbescheid",
+          "zeile": 5,
+          "bei": "2"
+        },
+        {
+          "typ": "countdown",
+          "label": "Widerspruch möglich noch",
+          "von": 14,
+          "bis": 0,
+          "einheit": "TAGE",
+          "bei": "2",
+          "dauer": 4.5,
+          "weg": {
+            "szene": 13
+          }
+        }
+      ]
+    },
+    {
+      "text": "Sonst droht der *Vollstreckungsbescheid*. Und dann darf *gepfändet* werden.",
+      "kamera": {
+        "pos": [
+          0.2,
+          1.55,
+          0.7
+        ],
+        "ziel": [
+          1.6,
+          1.3,
+          -2.4
+        ],
+        "bis": {
+          "pos": [
+            0.6,
+            1.55,
+            0.2
+          ],
+          "ziel": [
+            1.85,
+            1.35,
+            -2.45
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "nacht",
+          "wert": 0.75,
+          "bei": 0,
+          "dauer": 1.2
+        },
+        {
+          "typ": "klopfen",
+          "bei": "Und",
+          "staerke": 0.02
+        },
+        {
+          "typ": "alarm",
+          "bei": "gepfändet"
+        },
+        {
+          "typ": "hud",
+          "label": "Status",
+          "wert": "Pfändung",
+          "unter": "Vollstreckungsbescheid",
+          "bei": "gepfändet",
+          "farbe": "#ff6a5c"
+        }
+      ]
+    },
+    {
+      "text": "Auch wenn die Forderung *falsch* war.",
+      "kamera": {
+        "pos": [
+          0.6,
+          1.55,
+          0.2
+        ],
+        "ziel": [
+          1.85,
+          1.35,
+          -2.45
+        ],
+        "bis": {
+          "pos": [
+            1.1,
+            1.5,
+            -0.6
+          ],
+          "ziel": [
+            1.9,
+            1.4,
+            -2.45
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "wackeln",
+          "bei": "falsch",
+          "staerke": 0.012
+        }
+      ]
+    },
+    {
+      "text": "Welcher Brief soll als Nächstes? *Kommentier ihn.* Und speicher das, bevor du's brauchst.",
+      "untertitel": false,
+      "kamera": {
+        "pos": [
+          0.2,
+          1.7,
+          0.9
+        ],
+        "ziel": [
+          0.0,
+          0.8,
+          -0.5
+        ],
+        "bis": {
+          "pos": [
+            0.0,
+            2.3,
+            1.7
+          ],
+          "ziel": [
+            0.0,
+            0.8,
+            -0.6
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "nacht",
+          "wert": 0.2,
+          "bei": 0,
+          "dauer": 1.5
+        },
+        {
+          "typ": "ende",
+          "bei": 0,
+          "titel": "Welcher Brief\nals *Nächstes*?",
+          "zeilen": [
+            "↓ Schreib ihn in die Kommentare",
+            "Speichern, bevor du ihn brauchst"
+          ]
+        },
+        {
+          "typ": "hud",
+          "aus": true,
+          "bei": 0
+        }
+      ]
+    }
+  ]
+}

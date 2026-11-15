@@ -6,6 +6,9 @@ TikTok-Serie (Deutsch): **ein Brief pro Video**, 30–45 s, Amtsdeutsch überset
 `python3 -I .claude/skills/tiktok-lernen/scripts/bild1-check.py serie/renders/brief-XX.mp4 --aus <ordner>` und das Bild ansehen.
 Technik: Skill in `skill/` (`SKILL.md`, `references/folge-format.md` – dort die Brief-Bausteine `brief`, `uebersetzung`, `umschlag`, `schritte`, `alarmrand`, Hintergrund `flaeche-<farbe>`, Kopfzeile `hud`).
 
+## Stil (seit 15.11.2026): 3D statt Cartoon
+Der Nutzer mag den Cartoon-Stil nicht. **Standard ist der 3D-Stil** nach dem Vorbild der „What if?“-Videos von @man_ia_c (Low-Poly-3D, Ich-Perspektive, warmes Licht, kursive Serif-Untertitel, Mono-Messwerte, roter Countdown): `node skill/scripts/build-3d.mjs serie/folge-XX-3d --stumm`, Referenz `skill/references/folge-format-3d.md`. Beispiel: `serie/folge-01-3d/folge.json`. Der Cartoon-Generator (`build.mjs`) bleibt nur als Alternative.
+
 ## Format
 - **Bild 1:** Brief mit rotem Stempel (MAHNUNG, FRIST …), Figur in Panik, roter `alarmrand`, alles mit `"sofort": true` (kein Einblenden). Größter Text = Problem.
 - **Satz 1 mit Zahl** („Mahnung über 89 Euro? …“). Bei ~5–10 s offene Frage („Den Fehler zeig ich dir am Ende“).
