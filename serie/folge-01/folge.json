@@ -1,0 +1,682 @@
+{
+  "titel": "Der Brief vom Amt – Brief 1: Die Mahnung",
+  "folge": 1,
+  "hud": {
+    "links": "BRIEF #1",
+    "rechts": "DER BRIEF VOM AMT",
+    "y": 250
+  },
+  "quellen": [
+    "Verbraucherzentrale: Mahnbescheid bekommen – was tun? https://www.verbraucherzentrale.de/infothek/mahnbescheid-bekommen",
+    "Verbraucherzentrale Niedersachsen: Unterschied zwischen Mahnung und Mahnbescheid https://www.verbraucherzentrale-niedersachsen.de/themen/kaufen-reklamieren/produkte-kaufen/kurz-erklaert-mahnung-mahnbescheid-ein-unterschied",
+    "Deutsche Bundesbank: Basiszinssatz ab 1. Juli 2026 = 1,52 % (Verzugszinsen für Verbraucher: Basiszinssatz + 5 Prozentpunkte nach § 288 BGB = 6,52 %) https://www.bundesbank.de/de/presse/pressemitteilungen/bekanntgabe-des-basiszinssatzes-zum-1-juli-2026-anpassung-auf-1-52--941386",
+    "Justiz NRW: Das Mahnverfahren (Widerspruch 2 Wochen ab Zustellung) https://www.justiz.nrw/BS/lebenslagen/zivilrecht/Mahnverfahren"
+  ],
+  "szenen": [
+    {
+      "text": "Mahnung über *89 Euro*? Mach jetzt bloß nicht den *teuersten Fehler*.",
+      "hintergrund": "flaeche-gelb",
+      "kamera": "keine",
+      "untertitelY": 1010,
+      "figur": {
+        "ausdruck": "panik",
+        "pose": "kopf",
+        "rahmen": "halbnah",
+        "kopfOben": 1180,
+        "zittern": "teuersten"
+      },
+      "elemente": [
+        {
+          "typ": "alarmrand",
+          "sofort": true
+        },
+        {
+          "typ": "brief",
+          "sofort": true,
+          "x": 540,
+          "y": 640,
+          "breite": 800,
+          "rot": -3,
+          "logo": "blitz",
+          "absender": "Musterstrom GmbH",
+          "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+          "betreff": "",
+          "zeilen": [
+            {
+              "text": "Offener Betrag",
+              "betrag": "84,00 €"
+            },
+            {
+              "text": "Mahngebühr",
+              "betrag": "5,00 €"
+            },
+            {
+              "text": "GESAMT",
+              "betrag": "89,00 €",
+              "fett": true,
+              "mark": true,
+              "farbe": "rot",
+              "markiert": true
+            }
+          ],
+          "fueller": 2,
+          "stempel": {
+            "text": "MAHNUNG",
+            "sofort": true,
+            "x": 420,
+            "y": 110,
+            "groesse": 130,
+            "rot": -8
+          }
+        },
+        {
+          "typ": "schrift",
+          "text": "89 €!",
+          "farbe": "rot",
+          "x": 800,
+          "y": 900,
+          "groesse": 1.0,
+          "rot": -8,
+          "sofort": true
+        }
+      ]
+    },
+    {
+      "text": "Was steht da wirklich? Den Fehler zeig ich dir *am Ende*.",
+      "hintergrund": "flaeche-blau",
+      "kamera": "zoom",
+      "elemente": [
+        {
+          "typ": "brief",
+          "x": 540,
+          "y": 760,
+          "breite": 800,
+          "rot": -1,
+          "logo": "blitz",
+          "absender": "Musterstrom GmbH",
+          "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+          "betreff": "MAHNUNG – Rechnung Nr. 4711",
+          "zeilen": [
+            {
+              "text": "Unsere Rechnung vom 01.10. ist noch offen."
+            },
+            {
+              "text": "Sie befinden sich in Zahlungsverzug."
+            },
+            {
+              "text": "Wir berechnen Verzugszinsen gem. § 288 BGB."
+            },
+            {
+              "text": "Offener Betrag",
+              "betrag": "84,00 €"
+            },
+            {
+              "text": "Mahngebühr",
+              "betrag": "5,00 €"
+            },
+            {
+              "text": "GESAMT",
+              "betrag": "89,00 €",
+              "fett": true
+            }
+          ],
+          "stempel": {
+            "text": "MAHNUNG",
+            "sofort": true,
+            "x": 560,
+            "y": 120,
+            "groesse": 80,
+            "rot": -10
+          }
+        },
+        {
+          "typ": "stempel",
+          "text": "AUFLÖSUNG\nAM ENDE",
+          "farbe": "rot",
+          "groesse": 250,
+          "x": 820,
+          "y": 1000,
+          "rot": 10,
+          "bei": "am Ende"
+        }
+      ]
+    },
+    {
+      "text": "„In Verzug“ heißt: Du bist *zu spät dran*.",
+      "hintergrund": "flaeche-blau",
+      "kamera": "keine",
+      "elemente": [
+        {
+          "typ": "brief",
+          "sofort": true,
+          "x": 540,
+          "y": 690,
+          "breite": 780,
+          "rot": -1,
+          "logo": "blitz",
+          "absender": "Musterstrom GmbH",
+          "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+          "betreff": "MAHNUNG – Rechnung Nr. 4711",
+          "zeilen": [
+            {
+              "text": "Unsere Rechnung vom 01.10. ist noch offen."
+            },
+            {
+              "text": "Sie befinden sich in Zahlungsverzug.",
+              "mark": "Verzug"
+            },
+            {
+              "text": "Wir berechnen Verzugszinsen gem. § 288 BGB."
+            },
+            {
+              "text": "Offener Betrag",
+              "betrag": "84,00 €"
+            },
+            {
+              "text": "Mahngebühr",
+              "betrag": "5,00 €"
+            },
+            {
+              "text": "GESAMT",
+              "betrag": "89,00 €",
+              "fett": true
+            }
+          ],
+          "stempel": {
+            "text": "MAHNUNG",
+            "sofort": true,
+            "x": 560,
+            "y": 120,
+            "groesse": 80,
+            "rot": -10
+          }
+        },
+        {
+          "typ": "uebersetzung",
+          "x": 540,
+          "y": 1070,
+          "breite": 900,
+          "bei": "heißt",
+          "streichenBei": "heißt",
+          "klarBei": "zu",
+          "amt": "Sie befinden sich in Zahlungsverzug.",
+          "klar": "Du bist zu spät dran."
+        }
+      ],
+      "untertitelY": 1300
+    },
+    {
+      "text": "Ab jetzt kosten *Zinsen*: *6,52 Prozent* im Jahr.",
+      "hintergrund": "flaeche-blau",
+      "kamera": "keine",
+      "elemente": [
+        {
+          "typ": "brief",
+          "sofort": true,
+          "x": 540,
+          "y": 690,
+          "breite": 780,
+          "rot": -1,
+          "logo": "blitz",
+          "absender": "Musterstrom GmbH",
+          "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+          "betreff": "MAHNUNG – Rechnung Nr. 4711",
+          "zeilen": [
+            {
+              "text": "Unsere Rechnung vom 01.10. ist noch offen."
+            },
+            {
+              "text": "Sie befinden sich in Zahlungsverzug.",
+              "markiert": true
+            },
+            {
+              "text": "Wir berechnen Verzugszinsen gem. § 288 BGB.",
+              "mark": "Ab"
+            },
+            {
+              "text": "Offener Betrag",
+              "betrag": "84,00 €"
+            },
+            {
+              "text": "Mahngebühr",
+              "betrag": "5,00 €"
+            },
+            {
+              "text": "GESAMT",
+              "betrag": "89,00 €",
+              "fett": true
+            }
+          ],
+          "stempel": {
+            "text": "MAHNUNG",
+            "sofort": true,
+            "x": 560,
+            "y": 120,
+            "groesse": 80,
+            "rot": -10
+          }
+        },
+        {
+          "typ": "uebersetzung",
+          "x": 540,
+          "y": 1070,
+          "breite": 900,
+          "bei": "Ab",
+          "streichenBei": "Zinsen",
+          "klarBei": "6,52",
+          "amt": "Verzugszinsen gem. § 288 BGB",
+          "klar": "Zinsen: gerade 6,52 %\npro Jahr"
+        }
+      ],
+      "untertitelY": 1300
+    },
+    {
+      "text": "Und *5 Euro* Mahngebühr? Das ist oft *zu viel*.",
+      "hintergrund": "flaeche-blau",
+      "kamera": "keine",
+      "elemente": [
+        {
+          "typ": "brief",
+          "sofort": true,
+          "x": 540,
+          "y": 690,
+          "breite": 780,
+          "rot": -1,
+          "logo": "blitz",
+          "absender": "Musterstrom GmbH",
+          "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+          "betreff": "MAHNUNG – Rechnung Nr. 4711",
+          "zeilen": [
+            {
+              "text": "Unsere Rechnung vom 01.10. ist noch offen."
+            },
+            {
+              "text": "Sie befinden sich in Zahlungsverzug.",
+              "markiert": true
+            },
+            {
+              "text": "Wir berechnen Verzugszinsen gem. § 288 BGB.",
+              "markiert": true
+            },
+            {
+              "text": "Offener Betrag",
+              "betrag": "84,00 €"
+            },
+            {
+              "text": "Mahngebühr",
+              "betrag": "5,00 €",
+              "mark": "5",
+              "farbe": "rot"
+            },
+            {
+              "text": "GESAMT",
+              "betrag": "89,00 €",
+              "fett": true
+            }
+          ],
+          "stempel": {
+            "text": "MAHNUNG",
+            "sofort": true,
+            "x": 560,
+            "y": 120,
+            "groesse": 80,
+            "rot": -10
+          }
+        },
+        {
+          "typ": "uebersetzung",
+          "x": 540,
+          "y": 1070,
+          "breite": 900,
+          "bei": "5",
+          "streichenBei": "Das",
+          "klarBei": "oft",
+          "amt": "Mahngebühr 5,00 €",
+          "klar": "Nur echte Kosten erlaubt –\n5 € oft zu viel"
+        }
+      ],
+      "untertitelY": 1300
+    },
+    {
+      "text": "Was du jetzt tust. *Schritt 1:* Prüfen. Stimmt der Betrag?",
+      "hintergrund": "flaeche-creme",
+      "uebergang": "wisch-gelb",
+      "elemente": [
+        {
+          "typ": "schritte",
+          "x": 540,
+          "y": 650,
+          "titel": "WAS DU JETZT TUST",
+          "punkte": [
+            {
+              "text": "Prüfen",
+              "unter": "Rechnung bekannt? Betrag richtig?",
+              "bei": "Schritt"
+            }
+          ],
+          "breite": 960
+        },
+        {
+          "typ": "icon",
+          "icon": "buch",
+          "x": 860,
+          "y": 1000,
+          "groesse": 150,
+          "bei": "Stimmt"
+        }
+      ],
+      "figur": {
+        "rahmen": "halbnah",
+        "kopfOben": 1320,
+        "x": 540,
+        "ausdruck": "neutral",
+        "pose": "zeigen"
+      }
+    },
+    {
+      "text": "*Schritt 2:* Stimmt alles? *Sofort zahlen* – das stoppt die Zinsen.",
+      "hintergrund": "flaeche-creme",
+      "elemente": [
+        {
+          "typ": "schritte",
+          "sofort": true,
+          "x": 540,
+          "y": 650,
+          "titel": "WAS DU JETZT TUST",
+          "punkte": [
+            {
+              "text": "Prüfen",
+              "unter": "Rechnung bekannt? Betrag richtig?",
+              "fertig": true
+            },
+            {
+              "text": "Stimmt? Sofort zahlen",
+              "unter": "stoppt die Zinsen",
+              "bei": "Schritt"
+            }
+          ],
+          "breite": 960
+        },
+        {
+          "typ": "stempel",
+          "text": "BEZAHLT",
+          "farbe": "gruen",
+          "groesse": 230,
+          "x": 830,
+          "y": 1010,
+          "rot": -12,
+          "bei": "Sofort"
+        }
+      ],
+      "figur": {
+        "rahmen": "halbnah",
+        "kopfOben": 1320,
+        "x": 540,
+        "ausdruck": "gluecklich",
+        "pose": "stehen"
+      }
+    },
+    {
+      "text": "*Schritt 3:* Falsch? *Schriftlich widersprechen*, mit Nachweis.",
+      "hintergrund": "flaeche-creme",
+      "elemente": [
+        {
+          "typ": "schritte",
+          "sofort": true,
+          "x": 540,
+          "y": 650,
+          "titel": "WAS DU JETZT TUST",
+          "punkte": [
+            {
+              "text": "Prüfen",
+              "unter": "Rechnung bekannt? Betrag richtig?",
+              "fertig": true
+            },
+            {
+              "text": "Stimmt? Sofort zahlen",
+              "unter": "stoppt die Zinsen",
+              "fertig": true
+            },
+            {
+              "text": "Falsch? Schriftlich widersprechen",
+              "unter": "Nachweis aufheben",
+              "bei": "Schritt"
+            }
+          ],
+          "breite": 960
+        },
+        {
+          "typ": "stempel",
+          "text": "WIDER-\nSPRUCH",
+          "farbe": "blau",
+          "groesse": 230,
+          "x": 830,
+          "y": 1060,
+          "rot": 10,
+          "bei": "Schriftlich"
+        }
+      ],
+      "figur": {
+        "rahmen": "halbnah",
+        "kopfOben": 1320,
+        "x": 540,
+        "ausdruck": "wuetend",
+        "pose": "zeigen"
+      }
+    },
+    {
+      "text": "Der *teuerste Fehler*? Den *gelben Brief* ignorieren.",
+      "hintergrund": "flaeche-rot",
+      "uebergang": "wisch-rot",
+      "kamera": "zoom",
+      "untertitelY": 1180,
+      "figur": {
+        "ausdruck": "schock",
+        "pose": "kopf",
+        "rahmen": "halbnah",
+        "kopfOben": 1250,
+        "x": 540
+      },
+      "elemente": [
+        {
+          "typ": "alarmrand",
+          "bei": "gelben"
+        },
+        {
+          "typ": "umschlag",
+          "x": 540,
+          "y": 660,
+          "breite": 860,
+          "rot": -4,
+          "bei": "gelben",
+          "absender": "Amtsgericht Musterstadt",
+          "aufschrift": "Förmliche\nZustellung"
+        },
+        {
+          "typ": "sfx",
+          "text": "NICHT WEGWERFEN!",
+          "farbe": "gelb",
+          "x": 540,
+          "y": 330,
+          "groesse": 0.8,
+          "bei": "ignorieren"
+        }
+      ]
+    },
+    {
+      "text": "Da drin: ein *Mahnbescheid*. Das Gericht prüft *nicht*, ob er stimmt.",
+      "hintergrund": "flaeche-rot",
+      "elemente": [
+        {
+          "typ": "alarmrand",
+          "sofort": true
+        },
+        {
+          "typ": "brief",
+          "x": 540,
+          "y": 620,
+          "breite": 820,
+          "rot": 2,
+          "logo": "waage",
+          "bei": "Mahnbescheid",
+          "absender": "Amtsgericht Musterstadt",
+          "absenderZeile": "Mahnabteilung · 12345 Musterstadt",
+          "betreff": "MAHNBESCHEID",
+          "zeilen": [
+            {
+              "text": "Das Gericht hat nicht geprüft, ob dem Antragsteller der Anspruch zusteht.",
+              "mark": "nicht",
+              "farbe": "gelb"
+            },
+            {
+              "text": "Forderung laut Antragsteller",
+              "betrag": "89,00 €"
+            }
+          ],
+          "fueller": 3
+        },
+        {
+          "typ": "schrift",
+          "text": "NICHT GEPRÜFT!",
+          "farbe": "gelb",
+          "x": 540,
+          "y": 1050,
+          "groesse": 0.9,
+          "bei": "prüft"
+        }
+      ]
+    },
+    {
+      "text": "*2 Wochen* für den Widerspruch. Sonst kommt der *Vollstreckungsbescheid*.",
+      "hintergrund": "flaeche-rot",
+      "elemente": [
+        {
+          "typ": "alarmrand",
+          "sofort": true
+        },
+        {
+          "typ": "zahl",
+          "stil": "kalender",
+          "text": "14",
+          "oben": "WIDERSPRUCH",
+          "unten": "TAGE",
+          "x": 540,
+          "y": 640,
+          "bei": "2"
+        },
+        {
+          "typ": "banner",
+          "titel": "VOLLSTRECKUNGS-\nBESCHEID",
+          "untertitel": "dann darf gepfändet werden",
+          "farbe": "rot",
+          "x": 540,
+          "y": 1000,
+          "bei": "Vollstreckungsbescheid"
+        }
+      ],
+      "figur": {
+        "rahmen": "halbnah",
+        "kopfOben": 1300,
+        "x": 540,
+        "ausdruck": "panik",
+        "pose": "kopf"
+      },
+      "untertitelY": 1180
+    },
+    {
+      "text": "Dann darf *gepfändet* werden – auch wenn alles *falsch* war.",
+      "hintergrund": "flaeche-rot",
+      "figur": {
+        "ausdruck": "weinen",
+        "pose": "kopf",
+        "rahmen": "halbnah",
+        "kopfOben": 1250
+      },
+      "elemente": [
+        {
+          "typ": "alarmrand",
+          "sofort": true
+        },
+        {
+          "typ": "stempel",
+          "text": "GEPFÄNDET",
+          "farbe": "rot",
+          "groesse": 330,
+          "x": 540,
+          "y": 620,
+          "rot": -12,
+          "bei": "gepfändet"
+        },
+        {
+          "typ": "wackeln",
+          "bei": "gepfändet"
+        },
+        {
+          "typ": "schrift",
+          "text": "OBWOHL FALSCH!",
+          "farbe": "gelb",
+          "x": 540,
+          "y": 960,
+          "groesse": 0.8,
+          "bei": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Welcher Brief als Nächstes? *Kommentier ihn!* Und *speichern*, bevor du's brauchst.",
+      "hintergrund": "sunburst-lila",
+      "uebergang": "wisch-gelb",
+      "figur": {
+        "ausdruck": "grinsen",
+        "pose": "zeigen",
+        "rahmen": "halbnah",
+        "kopfOben": 1250,
+        "x": 540
+      },
+      "elemente": [
+        {
+          "typ": "banner",
+          "titel": "WELCHER BRIEF\nALS NÄCHSTES?",
+          "farbe": "gelb",
+          "x": 540,
+          "y": 470
+        },
+        {
+          "typ": "info",
+          "text": "Rundfunkbeitrag",
+          "farbe": "blau",
+          "x": 300,
+          "y": 720,
+          "bei": "Kommentier"
+        },
+        {
+          "typ": "info",
+          "text": "Steuerbescheid",
+          "farbe": "gruen",
+          "x": 780,
+          "y": 790,
+          "bei": "Kommentier",
+          "rot": 3
+        },
+        {
+          "typ": "info",
+          "text": "Nebenkosten",
+          "farbe": "rot",
+          "x": 320,
+          "y": 880,
+          "bei": "ihn"
+        },
+        {
+          "typ": "stempel",
+          "text": "SPEICHERN\n🔖",
+          "farbe": "gelb",
+          "groesse": 220,
+          "x": 840,
+          "y": 1010,
+          "rot": 10,
+          "bei": "speichern"
+        }
+      ]
+    }
+  ]
+}

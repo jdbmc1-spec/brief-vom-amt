@@ -1,0 +1,8 @@
+# Nur Code, Drehbücher und Texte. Videos, Ton und Render-Projekte lassen sich neu bauen.
+*.mp4
+*.mp3
+*.wav
+projekt/
+sfx/
+node_modules/
+.env

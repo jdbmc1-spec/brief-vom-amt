@@ -1,0 +1,25 @@
+{
+  "name": "Du",
+  "serie": "Der Brief vom Amt",
+  "figur": {
+    "haare": "kurz",
+    "haarFarbe": "#3a2618",
+    "bart": "keiner",
+    "headset": false,
+    "flecken": false,
+    "pickel": false,
+    "fliegen": false,
+    "bauch": false,
+    "gewicht": 0.3,
+    "shirt": "#5aa9ff",
+    "hose": "#2a2f45",
+    "schuhe": "#f4f1ea"
+  },
+  "stimme": {
+    "voiceId": "",
+    "modell": "eleven_multilingual_v2"
+  },
+  "hud": { "links": "BRIEF #1", "rechts": "DER BRIEF VOM AMT", "y": 250 },
+  "untertitelY": 1180,
+  "fortschritt": true
+}
