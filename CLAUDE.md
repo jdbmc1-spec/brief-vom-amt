@@ -38,3 +38,13 @@ cd serie/folge-01/projekt && npx --yes hyperframes@0.8.223 render -o ../../rende
 - Themen-Ideen: Rundfunkbeitrag, Steuerbescheid/Steuererklärung, Nebenkostenabrechnung, Mieterhöhung, Handyvertrag kündigen, Anhörungsbogen Blitzer, Krankenkasse, Schufa-Auskunft, Wahlbenachrichtigung. Kommentare liefern die nächsten Themen.
 
 Git: Commits als `jdbmc1-spec` <353731689+jdbmc1-spec@users.noreply.github.com>. Nicht ins kais-glowup-Repo committen.
+
+## Feedback des Nutzers (15.11.2026, abends) – HIER MORGEN WEITERMACHEN
+- **3D-Stil statt Cartoon** (Cartoon gefällt ihm nicht). 3D-Fassung Brief 1: `serie/renders/brief-01-3d-stumm.mp4` (50 s, stumm).
+- **„Der Anfang ist viel zu langweilig.“** → Als Erstes den Einstieg (0–5 s) von `serie/folge-01-3d` umbauen, Rest erst danach.
+  Ideen dafür (noch nicht mit dem Nutzer abgestimmt):
+  1. Mit dem Ende anfangen: Es klopft, rotes Licht an der Tür, Countdown „WIDERSPRUCH MÖGLICH NOCH 0 TAGE“ ab Bild 1, Satz 1: „Alles fing mit einer Mahnung über 89 Euro an.“ Dann Rückblende zum Tisch.
+  2. Der gelbe Umschlag fällt in Bild 1 auf den Tisch (Wackler), Countdown 14 Tage läuft sofort.
+  3. Schnellere Kamera im Hook (Sprung statt ruhiger Fahrt), Bild 1 farbiger (Bild-1-Check: nur 22 % Sättigung, 0,4 % Rot – zu wenig).
+- Bild-1-Check 3D-Fassung: Problem sichtbar, aber Farbe/Rot zu schwach.
+- Offen: privates GitHub-Repo `brief-vom-amt` (Nutzer legt an), Stimme/Ton erst auf Ansage.
