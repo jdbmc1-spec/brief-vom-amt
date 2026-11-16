@@ -141,7 +141,7 @@ ${fontCss}${css}
 <div id="root" data-composition-id="main" data-start="0" data-duration="${GESAMT}" data-width="1080" data-height="1920" data-fps="30">
 <div id="welt" class="clip" data-start="0" data-duration="${GESAMT}" data-track-index="1"><canvas id="welt-canvas" width="1080" height="1920"></canvas><div class="vignette"></div></div>
 <div id="hud" class="clip" data-start="0" data-duration="${GESAMT}" data-track-index="2" data-track-kind="graphics">
-<div class="vfs" id="vfs"></div>${marke}
+<div class="rotrand" id="rotrand"></div><div class="vfs" id="vfs"></div>${marke}
 <div class="countdown" id="countdown"><div id="cd-label"></div><div class="cd-zeile"><span id="cd-zahl"></span><span id="cd-einheit"></span></div></div>
 <div class="hud-wert" id="hud-wert"><div id="hud-label"></div><div id="hud-zahl"></div><div id="hud-unter"></div></div>
 ${ebenen}

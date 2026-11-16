@@ -1,0 +1,230 @@
+{
+  "stil": "3d",
+  "folge": 1,
+  "marke": "Der Brief vom Amt · #1",
+  "untertitelY": 1250,
+  "briefe": {
+    "mahnung": {
+      "pos": [
+        0.02,
+        0,
+        -0.4
+      ],
+      "rotY": 0.06,
+      "absender": "Musterstrom GmbH",
+      "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+      "logoText": "M",
+      "logoFarbe": "#2f6f5e",
+      "datum": "03.11.2026",
+      "betreff": "Mahnung – Rechnung Nr. 4711",
+      "zeilen": [
+        {
+          "text": "Unsere Rechnung vom 01.10. ist noch offen."
+        },
+        {
+          "text": "Sie befinden sich in Zahlungsverzug."
+        },
+        {
+          "text": "Wir berechnen Verzugszinsen (§ 288 BGB)."
+        },
+        {
+          "text": "Offener Betrag",
+          "betrag": "84,00 €",
+          "linie": true
+        },
+        {
+          "text": "Mahngebühr",
+          "betrag": "5,00 €"
+        },
+        {
+          "text": "Gesamt",
+          "betrag": "89,00 €",
+          "fett": true,
+          "gross": true,
+          "linie": true
+        }
+      ],
+      "fueller": 3,
+      "stempel": {
+        "text": "MAHNUNG",
+        "x": 700,
+        "y": 330,
+        "rot": -10,
+        "groesse": 92
+      }
+    }
+  },
+  "titel": "Hook-Test b",
+  "szenen": [
+    {
+      "text": "Dieser *gelbe Brief* gibt dir *14 Tage*.",
+      "kamera": {
+        "pos": [
+          0.3,
+          1.45,
+          0.25
+        ],
+        "ziel": [
+          0.1,
+          0.72,
+          -0.4
+        ],
+        "bis": {
+          "pos": [
+            0.2,
+            1.25,
+            0.05
+          ],
+          "ziel": [
+            0.1,
+            0.72,
+            -0.4
+          ]
+        },
+        "ease": "out"
+      },
+      "ereignisse": [
+        {
+          "typ": "zeige",
+          "objekt": "umschlag",
+          "bei": 0,
+          "pos": [
+            0.12,
+            0,
+            -0.34
+          ],
+          "rotY": 0.25,
+          "lage": 2
+        },
+        {
+          "typ": "wackeln",
+          "bei": 0.5,
+          "staerke": 0.025
+        },
+        {
+          "typ": "countdown",
+          "label": "Widerspruch möglich noch",
+          "von": 14,
+          "bis": 13.99,
+          "format": "uhr",
+          "einheit": "",
+          "dauer": 60,
+          "bei": 0,
+          "weg": {
+            "szene": 3
+          }
+        },
+        {
+          "typ": "rotrand",
+          "bei": 0.5,
+          "weg": 1.6
+        },
+        {
+          "typ": "titel",
+          "text": "Ignorier diesen\n*gelben Brief* nie.",
+          "bei": 0,
+          "weg": "ende",
+          "y": 640
+        }
+      ]
+    },
+    {
+      "text": "Verpasst du sie, darf *gepfändet* werden. Auch wenn du *nichts* schuldest.",
+      "kamera": {
+        "pos": [
+          0.6,
+          1.55,
+          0.2
+        ],
+        "ziel": [
+          1.85,
+          1.35,
+          -2.45
+        ],
+        "bis": {
+          "pos": [
+            1.0,
+            1.5,
+            -0.5
+          ],
+          "ziel": [
+            1.9,
+            1.4,
+            -2.45
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "nacht",
+          "wert": 0.8,
+          "bei": 0,
+          "dauer": 0.01
+        },
+        {
+          "typ": "klopfen",
+          "bei": "gepfändet",
+          "staerke": 0.02
+        },
+        {
+          "typ": "alarm",
+          "bei": "gepfändet"
+        },
+        {
+          "typ": "rotrand",
+          "bei": "gepfändet",
+          "weg": "ende"
+        },
+        {
+          "typ": "hud",
+          "label": "Status",
+          "wert": "Pfändung",
+          "unter": "Vollstreckungsbescheid",
+          "bei": "gepfändet",
+          "farbe": "#ff6a5c"
+        }
+      ]
+    },
+    {
+      "text": "Und so kommt es überhaupt so weit.",
+      "kamera": {
+        "pos": [
+          0.03,
+          1.42,
+          0.22
+        ],
+        "ziel": [
+          0.02,
+          0.6,
+          -0.72
+        ],
+        "bis": {
+          "pos": [
+            0.03,
+            1.25,
+            0.02
+          ],
+          "ziel": [
+            0.02,
+            0.6,
+            -0.72
+          ]
+        },
+        "ease": "out"
+      },
+      "ereignisse": [
+        {
+          "typ": "nacht",
+          "wert": 0,
+          "bei": 0,
+          "dauer": 0.01
+        },
+        {
+          "typ": "hud",
+          "aus": true,
+          "bei": 0
+        }
+      ]
+    }
+  ]
+}

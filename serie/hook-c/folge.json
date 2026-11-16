@@ -1,0 +1,300 @@
+{
+  "stil": "3d",
+  "folge": 1,
+  "marke": "Der Brief vom Amt · #1",
+  "untertitelY": 1250,
+  "briefe": {
+    "mahnung": {
+      "pos": [
+        0.02,
+        0,
+        -0.4
+      ],
+      "rotY": 0.06,
+      "absender": "Musterstrom GmbH",
+      "absenderZeile": "Funkenweg 7 · 12345 Musterstadt",
+      "logoText": "M",
+      "logoFarbe": "#2f6f5e",
+      "datum": "03.11.2026",
+      "betreff": "Mahnung – Rechnung Nr. 4711",
+      "zeilen": [
+        {
+          "text": "Unsere Rechnung vom 01.10. ist noch offen."
+        },
+        {
+          "text": "Sie befinden sich in Zahlungsverzug."
+        },
+        {
+          "text": "Wir berechnen Verzugszinsen (§ 288 BGB)."
+        },
+        {
+          "text": "Offener Betrag",
+          "betrag": "84,00 €",
+          "linie": true
+        },
+        {
+          "text": "Mahngebühr",
+          "betrag": "5,00 €"
+        },
+        {
+          "text": "Gesamt",
+          "betrag": "89,00 €",
+          "fett": true,
+          "gross": true,
+          "linie": true
+        }
+      ],
+      "fueller": 3,
+      "stempel": {
+        "text": "MAHNUNG",
+        "x": 700,
+        "y": 330,
+        "rot": -10,
+        "groesse": 92
+      }
+    }
+  },
+  "titel": "Hook-Test c",
+  "szenen": [
+    {
+      "text": "Mahnung über *89 Euro*?",
+      "kamera": {
+        "pos": [
+          0.03,
+          1.9,
+          0.5
+        ],
+        "ziel": [
+          0.02,
+          0.7,
+          -0.55
+        ],
+        "bis": {
+          "pos": [
+            0.04,
+            1.02,
+            -0.2
+          ],
+          "ziel": [
+            0.03,
+            0.75,
+            -0.42
+          ]
+        },
+        "ease": "out"
+      },
+      "ereignisse": [
+        {
+          "typ": "rotrand",
+          "bei": 0,
+          "weg": "ende"
+        },
+        {
+          "typ": "titel",
+          "text": "Mahnung über *89 €*?\nNicht ignorieren.",
+          "bei": 0,
+          "weg": "ende",
+          "y": 330
+        }
+      ]
+    },
+    {
+      "text": "Liegen lassen –",
+      "kamera": {
+        "pos": [
+          1.5,
+          1.6,
+          1.3
+        ],
+        "ziel": [
+          -0.3,
+          0.9,
+          -0.9
+        ],
+        "bis": {
+          "pos": [
+            1.2,
+            1.5,
+            0.9
+          ],
+          "ziel": [
+            -0.3,
+            0.9,
+            -0.9
+          ]
+        },
+        "ease": "linear"
+      },
+      "ereignisse": [
+        {
+          "typ": "hud",
+          "label": "Seit der Mahnung",
+          "wert": "Tag 1",
+          "bei": 0
+        },
+        {
+          "typ": "tage",
+          "von": 1,
+          "bis": 30,
+          "bei": 0,
+          "dauer": 1.2
+        },
+        {
+          "typ": "stapel",
+          "anzahl": 8,
+          "bei": 0,
+          "dauer": 1.1
+        }
+      ]
+    },
+    {
+      "text": "gelber Brief vom *Gericht* –",
+      "kamera": {
+        "pos": [
+          0.3,
+          1.45,
+          0.25
+        ],
+        "ziel": [
+          0.1,
+          0.72,
+          -0.4
+        ],
+        "bis": {
+          "pos": [
+            0.22,
+            1.25,
+            0.05
+          ],
+          "ziel": [
+            0.1,
+            0.72,
+            -0.4
+          ]
+        },
+        "ease": "out"
+      },
+      "ereignisse": [
+        {
+          "typ": "hud",
+          "aus": true,
+          "bei": 0
+        },
+        {
+          "typ": "zeige",
+          "objekt": "umschlag",
+          "bei": 0,
+          "pos": [
+            0.12,
+            0,
+            -0.34
+          ],
+          "rotY": 0.25,
+          "lage": 2
+        },
+        {
+          "typ": "wackeln",
+          "bei": 0.5,
+          "staerke": 0.025
+        },
+        {
+          "typ": "countdown",
+          "label": "Widerspruch möglich noch",
+          "von": 14,
+          "bis": 0,
+          "einheit": "TAGE",
+          "dauer": 1.6,
+          "bei": 0.3,
+          "weg": {
+            "szene": 5
+          }
+        }
+      ]
+    },
+    {
+      "text": "und dann klopft es.",
+      "kamera": {
+        "pos": [
+          0.6,
+          1.55,
+          0.2
+        ],
+        "ziel": [
+          1.85,
+          1.35,
+          -2.45
+        ],
+        "bis": {
+          "pos": [
+            1.1,
+            1.5,
+            -0.7
+          ],
+          "ziel": [
+            1.9,
+            1.4,
+            -2.45
+          ]
+        },
+        "ease": "out"
+      },
+      "ereignisse": [
+        {
+          "typ": "nacht",
+          "wert": 0.8,
+          "bei": 0,
+          "dauer": 0.01
+        },
+        {
+          "typ": "klopfen",
+          "bei": "klopft",
+          "staerke": 0.025
+        },
+        {
+          "typ": "alarm",
+          "bei": 0
+        },
+        {
+          "typ": "rotrand",
+          "bei": 0,
+          "weg": "ende"
+        }
+      ]
+    },
+    {
+      "text": "So verhinderst du das.",
+      "kamera": {
+        "pos": [
+          0.03,
+          1.42,
+          0.22
+        ],
+        "ziel": [
+          0.02,
+          0.6,
+          -0.72
+        ],
+        "bis": {
+          "pos": [
+            0.03,
+            1.25,
+            0.02
+          ],
+          "ziel": [
+            0.02,
+            0.6,
+            -0.72
+          ]
+        }
+      },
+      "ereignisse": [
+        {
+          "typ": "nacht",
+          "wert": 0,
+          "bei": 0,
+          "dauer": 0.01
+        }
+      ]
+    }
+  ]
+}

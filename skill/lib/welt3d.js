@@ -264,7 +264,8 @@
         ? (() => { const s = Math.max(0, v * 86400); const tg = Math.floor(s / 86400), hh = Math.floor((s % 86400) / 3600), mm = Math.floor((s % 3600) / 60), ss = Math.floor(s % 60); return `${tg} T ${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}`; })()
         : `${Math.ceil(v - 1e-6)}`;
       $('cd-einheit').textContent = cd.einheit || '';
-      cdb.classList.toggle('null', k >= 1);
+      cdb.classList.toggle('null', k >= 1 && cd.format !== 'uhr');
+      cdb.classList.toggle('uhr', cd.format === 'uhr');
     } else cdb.style.opacity = 0;
     // Hook-Titel
     for (const ti of ev('titel')) {
@@ -293,6 +294,9 @@
     // Abspann
     const ende = ev('ende')[0];
     if (ende) $('ende').style.opacity = t >= ende.t ? clamp((t - ende.t) / 0.5) : 0;
+    // Roter pulsierender Rand (Gefahr): { typ: "rotrand", bei, weg }
+    const rr = ev('rotrand').filter((e) => t >= e.t && (e.weg == null || t < e.weg)).pop();
+    $('rotrand').style.opacity = rr ? 0.65 + 0.35 * Math.cos((t - rr.t) * 7) : 0;
     $('vfs').style.transform = `scaleX(${t / D})`;
   }
 

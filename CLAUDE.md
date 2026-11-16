@@ -48,3 +48,8 @@ Git: Commits als `jdbmc1-spec` <353731689+jdbmc1-spec@users.noreply.github.com>.
   3. Schnellere Kamera im Hook (Sprung statt ruhiger Fahrt), Bild 1 farbiger (Bild-1-Check: nur 22 % Sättigung, 0,4 % Rot – zu wenig).
 - Bild-1-Check 3D-Fassung: Problem sichtbar, aber Farbe/Rot zu schwach.
 - Offen: privates GitHub-Repo `brief-vom-amt` (Nutzer legt an), Stimme/Ton erst auf Ansage.
+
+## Feedback 16.11.2026
+- „Bis Sekunde 26 hätte jeder weitergewischt.“ Erklärungen (Verzug, Zinsen, Mahngebühr, 3 Schritte) **ans Ende und viel kürzer**.
+- Alle 3 Hook-Ideen „ganz okay“ → Test-Anfänge gebaut: `serie/hook-a` (Ende zuerst: Tür, 0 Tage, „30 Tage vorher“), `serie/hook-b` (gelber Brief knallt, Uhr 13 T 23:59:59 läuft), `serie/hook-c` (Schnelldurchlauf in 5 s: Mahnung → Stapel → gelber Brief → Tür). Nutzer wählt.
+- Generator neu: Ereignis `rotrand` (pulsierender roter Rand), Countdown `format: "uhr"` kleiner.
