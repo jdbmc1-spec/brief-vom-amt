@@ -53,3 +53,11 @@ Git: Commits als `jdbmc1-spec` <353731689+jdbmc1-spec@users.noreply.github.com>.
 - „Bis Sekunde 26 hätte jeder weitergewischt.“ Erklärungen (Verzug, Zinsen, Mahngebühr, 3 Schritte) **ans Ende und viel kürzer**.
 - Alle 3 Hook-Ideen „ganz okay“ → Test-Anfänge gebaut: `serie/hook-a` (Ende zuerst: Tür, 0 Tage, „30 Tage vorher“), `serie/hook-b` (gelber Brief knallt, Uhr 13 T 23:59:59 läuft), `serie/hook-c` (Schnelldurchlauf in 5 s: Mahnung → Stapel → gelber Brief → Tür). Nutzer wählt.
 - Generator neu: Ereignis `rotrand` (pulsierender roter Rand), Countdown `format: "uhr"` kleiner.
+
+## Stand 16.11.2026 (Nachmittag)
+- Nutzer hat **Anfang A** gewählt → `serie/folge-01-3d-a` (33,6 s). Erklärungen nur noch kurz am Ende („So passiert dir das nicht“, 4 Punkte).
+- **Stimme: Ian** („Deep, Punchy Social Hook“), voiceId `uC1r2TVqMMkHyjSAteKk` in `serie/serie.json`. ElevenLabs-Key liegt als Netzwerk-Secret in der Umgebung „brief-vom-amt“ (`ELEVENLABS_API_KEY=proxy-injected NODE_USE_ENV_PROXY=1` setzen).
+- Endfassung mit Ton: `serie/renders/brief-01-3d-a.mp4` + `.txt` (KI-Hinweis aktivieren).
+- GitHub: `jdbmc1-spec/brief-vom-amt` (privat), Branch `main`.
+- Rendern in der Cloud: `render --workers 4`, dauert ~10 min (WebGL per Software); im Hintergrund starten, kein `timeout` davor.
+- Offene Idee: Person hinter dem Milchglas in Bild 1 dunkler/größer (Mini-Ansicht).

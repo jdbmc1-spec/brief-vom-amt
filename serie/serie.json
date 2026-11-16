@@ -16,10 +16,14 @@
     "schuhe": "#f4f1ea"
   },
   "stimme": {
-    "voiceId": "",
+    "voiceId": "uC1r2TVqMMkHyjSAteKk",
     "modell": "eleven_multilingual_v2"
   },
-  "hud": { "links": "BRIEF #1", "rechts": "DER BRIEF VOM AMT", "y": 250 },
+  "hud": {
+    "links": "BRIEF #1",
+    "rechts": "DER BRIEF VOM AMT",
+    "y": 250
+  },
   "untertitelY": 1180,
   "fortschritt": true
 }
