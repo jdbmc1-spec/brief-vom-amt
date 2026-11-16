@@ -6,3 +6,5 @@ projekt/
 sfx/
 node_modules/
 .env
+serie/renders/work-*/
+serie/renders/.*
