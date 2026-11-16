@@ -1,6 +1,6 @@
 ---
 name: tiktok-lernen
-description: Gemeinsames TikTok-Wissen für alle Code-Cartoon-Serien des Nutzers (Mein Dönerimperium, Mein Gymimperium, Bundesländer-Krieg, Dein Karrieremodus, Kais GlowUp, Würdest du deinen Job überleben?). Enthält die gemessenen Lehren aus der Markt- und Konkurrenzanalyse (deutsche Mitmach-Serien, englische Formate), einen Hook-Check für jede neue Folge, Benchmarks und Skripte, um eigene und fremde TikTok-Kanäle selbst zu messen und Top- gegen Flop-Videos Bild für Bild zu vergleichen. Verwenden vor dem Schreiben jeder neuen Folge (Hook, erster Satz, Titel), wenn eine Folge schlecht läuft oder die Reichweite fällt, wenn der Nutzer Zahlen, Konkurrenz oder Trends analysieren will, nach neuen Nischen oder Formaten fragt oder fragt, was auf TikTok funktioniert – auch wenn er den Skill nicht beim Namen nennt.
+description: Gemeinsames TikTok-Wissen für alle Code-Cartoon-Serien des Nutzers (Mein Dönerimperium, Mein Gymimperium, Bundesländer-Krieg, Dein Karrieremodus, Kais GlowUp, Würdest du deinen Job überleben?, Deine Flucht, Der Brief vom Amt). Enthält die gemessenen Lehren aus der Markt- und Konkurrenzanalyse (deutsche Mitmach-Serien, englische Formate), einen Hook-Check für jede neue Folge, Benchmarks und Skripte, um eigene und fremde TikTok-Kanäle selbst zu messen und Top- gegen Flop-Videos Bild für Bild zu vergleichen. Verwenden vor dem Schreiben jeder neuen Folge (Hook, erster Satz, Titel), wenn eine Folge schlecht läuft oder die Reichweite fällt, wenn der Nutzer Zahlen, Konkurrenz oder Trends analysieren will, nach neuen Nischen oder Formaten fragt oder fragt, was auf TikTok funktioniert – auch wenn er den Skill nicht beim Namen nennt.
 ---
 
 # TikTok lernen – gemeinsames Wissen aller Serien
@@ -122,6 +122,15 @@ Gewinner posten 2 oder mehr Videos am Tag, oft mit kurzen Eil-Updates zwischen d
 3. „Würdest du deinen Job überleben?“: ein Beruf pro Video (läuft als eigene Serie).
 4. Absurdes Mammutziel animiert („Mein Tunnel nach Mallorca, 1 Follower = 1 Löffel“).
 5. Reality-TV-Parodie mit Essen als Kandidaten (Fruit-Love-Island-Prinzip, 10–39 Mio. pro Folge, wurde aber als KI-Slop gesperrt). Eigener Code-Look, keine echten Sendungsnamen.
+
+## Weitere Skills im Repo: Instagram-Paket `ig-*` (seit 16.11.2026)
+
+Neben diesem Skill liegen unter `.claude/skills/` die 13 Skills aus `Jakeschincariol/instagram-agent-skill` (MIT, geprüft: nur Python-Standardbibliothek, kein Netzwerk). Nützlich sind vor allem `/ig-reel` (Hooks nach 26 Formeln, Skript, Bildschirmtext, Ablaufplan mit `hookscore.py` und `beats.py`), `/ig-viral` (Recherche, was in der Nische gerade läuft), `/ig-human` (KI-Spuren aus Texten entfernen), `/ig-caption`.
+Grenzen, gemessen beim Test:
+- **Auf Englisch ausgelegt.** `hookscore.py` gab dem deutschen Hook „Dieser Brief kostet dich 120 Euro, wenn du ihn falsch verstehst“ nur 45,6 („WEAK“), wohl wegen englischer Wortlisten. Bei deutschen Texten die Punktzahl nur grob nehmen, `beats.py` (Länge, Takt) ist sprachunabhängiger.
+- **Für Instagram und gefilmte Reels geschrieben** (eigene Stimme, Kamera). Für die Code-Cartoon-Serien die Regeln übernehmen, nicht die Abläufe zum Drehen.
+- `/ig-reel` will vor dem ersten Skript ein Stimmprofil (`~/.claude/instagram/voice.md`, drei eigene Reels). Für die Serien stattdessen die Erzählstimme der Serie beschreiben.
+- Bei Widersprüchen gelten die Messungen in diesem Skill vor den Faustregeln der `ig-*`-Skills.
 
 ## Neues lernen (Zahlen selbst messen)
 

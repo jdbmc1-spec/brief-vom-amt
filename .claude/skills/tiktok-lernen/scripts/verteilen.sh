@@ -5,7 +5,7 @@
 set -eu
 quelle=$(cd "$(dirname "$0")/.." && pwd)
 basis=${1:-$(cd "$quelle/../../../.." && pwd)}
-for repo in mein-doenerimperium mein-gymimperium bundeslaender-krieg dein-karrieremodus kais-glowup job-ueberleben; do
+for repo in mein-doenerimperium mein-gymimperium bundeslaender-krieg dein-karrieremodus kais-glowup job-ueberleben du-warst-es-nicht brief-vom-amt; do
   ziel="$basis/$repo/.claude/skills/tiktok-lernen"
   [ -d "$basis/$repo/.git" ] || continue
   [ "$(cd "$basis/$repo" && pwd)/.claude/skills/tiktok-lernen" = "$quelle" ] && continue
